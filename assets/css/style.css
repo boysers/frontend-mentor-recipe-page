@@ -36,6 +36,8 @@
   --color-stone-900: hsl(24, 5%, 18%);
 
   --color-light: hsl(0, 0%, 100%);
+
+  --color-grey-light: hsl(0, 0%, 88%);
 }
 
 /* Reset CSS */
@@ -55,6 +57,7 @@ html {
 body {
   font-size: 1rem;
   background-color: var(--color-stone-100);
+  color: var(--color-stone-900);
 }
 
 h1,
@@ -121,7 +124,7 @@ hr {
 
 /* Main container */
 .container {
-  padding-top: 7.5rem;
+  padding: 7.5rem 0;
 }
 
 /* Recipe */
@@ -154,6 +157,35 @@ hr {
   list-style: disc;
 }
 
+/* Nutrition Table */
+.nutrition-table {
+  width: 100%;
+}
+
+.nutrition-table__list {
+  list-style: none;
+  padding: 0;
+}
+
+.nutrition-table__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nutrition-table__item:not(.nutrition-table__item:last-child) {
+  border-bottom: 1px solid var(--color-grey-light);
+}
+
+.nutrition-table__label,
+.nutrition-table__value {
+  flex: 1;
+  padding: 0.5rem 1rem;
+}
+
+.nutrition-table__value > strong {
+  color: var(--color-brown);
+}
+
 @media (max-width: 768px) {
   body {
     background-color: transparent;
@@ -164,7 +196,7 @@ hr {
   }
 
   .container {
-    padding-top: 0;
+    padding: 0;
   }
 
   .recipe {
