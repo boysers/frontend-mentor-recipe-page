@@ -57,7 +57,7 @@ html {
 body {
   font-size: 1rem;
   background-color: var(--color-stone-100);
-  color: var(--color-stone-900);
+  color: var(--color-stone-600);
 }
 
 h1,
