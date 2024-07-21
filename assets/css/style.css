@@ -73,11 +73,6 @@ h2 {
   color: var(--color-brown);
 }
 
-h3 {
-  font-size: 1.25rem;
-  color: var(--color-rose-800);
-}
-
 p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
@@ -123,4 +118,24 @@ hr {
 .container {
   margin: 0 auto;
   max-width: 736px;
+}
+
+.recipe__picture {
+  border-radius: 12px;
+}
+
+/* Card */
+.card {
+  background-color: var(--color-rose-50);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  color: var(--color-rose-800);
+}
+
+.card__body {
+  margin-top: 1rem;
 }
